@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fortune Animals — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Fortune Animals (demo)</h1>
+      <div class="balance">Saldo: <span id="balance">0</span> pts</div>
+    </header>
+
+    <main>
+      <section class="controls">
+        <div class="bet-controls">
+          <label>Aposta:</label>
+          <input id="bet-input" type="number" min="1" value="50" />
+          <button id="bet-decrease">-</button>
+          <button id="bet-increase">+</button>
+        </div>
+
+        <div class="animals-select" id="animals-select">
+          <!-- animal buttons inserted by JS -->
+        </div>
+
+        <div class="actions">
+          <button id="spin-btn">Girar</button>
+          <button id="reset-btn">Reset Saldo</button>
+        </div>
+      </section>
+
+      <section class="wheel-area">
+        <div id="wheel" class="wheel">
+          <!-- wheel sectors inserted by JS -->
+        </div>
+      </section>
+
+      <section class="log">
+        <h3>Histórico</h3>
+        <ul id="log-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Demo educativo — sem dinheiro real</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
